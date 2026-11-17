@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio personal de Andrés Jaramillo, desarrollador web en formación."
+    />
+    <meta name="theme-color" content="#10110f" />
+    <title>Andrés Jaramillo — Desarrollador en formación</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: "#10110f",
+              paper: "#f1f0e9",
+              acid: "#d8ff3e",
+              muted: "#a2a49b",
+            },
+            fontFamily: {
+              sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+              mono: ["ui-monospace", "SFMono-Regular", "monospace"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="font-sans text-paper antialiased">
+    <header class="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 sm:px-10 lg:px-16">
+      <a href="#inicio" class="font-mono text-sm tracking-tight" aria-label="Andrés Jaramillo, inicio">
+        AJ<span class="text-acid">.</span>
+      </a>
+      <nav aria-label="Navegación principal" class="order-3 flex w-full flex-wrap gap-x-5 gap-y-3 text-xs text-muted md:order-none md:w-auto md:gap-8 md:text-sm">
+        <a class="transition hover:text-acid" href="#sobre-mi">Sobre mí</a>
+        <a class="transition hover:text-acid" href="#habilidades">Habilidades</a>
+        <a class="transition hover:text-acid" href="#educacion">Educación</a>
+        <a class="transition hover:text-acid" href="#contacto">Contacto</a>
+      </nav>
+      <a
+        href="mailto:andresriwi@gmail.com"
+        class="rounded-full border border-white/15 px-4 py-2 text-xs transition hover:border-acid hover:text-acid"
+      >
+        Hablemos <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+
+    <main>
+      <section id="inicio" class="mx-auto grid min-h-[78vh] max-w-7xl items-center gap-12 px-6 py-16 sm:px-10 lg:grid-cols-[1.25fr_0.75fr] lg:px-16 lg:py-24">
+        <div>
+          <p class="mb-8 flex items-center gap-3 font-mono text-xs uppercase tracking-[0.2em] text-muted">
+            <span class="h-px w-8 bg-acid"></span>
+            Portafolio personal · 2026
+          </p>
+          <h1 class="max-w-4xl text-6xl font-semibold leading-[0.95] tracking-[-0.07em] sm:text-7xl lg:text-8xl">
+            Hola, soy<br />
+            <span class="text-acid">Andrés</span><span class="text-acid">.</span><br />
+            <span class="outline-text">Estoy creando</span>
+          </h1>
+          <div class="mt-10 flex flex-col gap-6 sm:flex-row sm:items-center">
+            <p class="max-w-md leading-7 text-muted">
+              Desarrollador en proceso, aprendiendo a convertir ideas en experiencias para la web.
+            </p>
+            <a
+              href="#sobre-mi"
+              class="group inline-flex w-fit items-center gap-3 rounded-full bg-acid px-5 py-3 text-sm font-medium text-ink transition hover:bg-paper"
+            >
+              Conóceme <span aria-hidden="true" class="transition group-hover:translate-y-1">↓</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="relative mx-auto w-full max-w-sm">
+          <div class="glow absolute inset-8 rounded-full bg-acid/10 blur-3xl"></div>
+          <div class="relative aspect-square rotate-3 border border-white/15 bg-ink/70 p-6 backdrop-blur transition duration-500 hover:rotate-0 sm:p-8">
+            <div class="flex items-center justify-between font-mono text-xs text-muted">
+              <span>EN CONSTRUCCIÓN</span>
+              <span class="text-acid">●</span>
+            </div>
+            <div class="mt-12 font-mono text-sm leading-8 text-muted">
+              <p><span class="text-acid">const</span> developer = {</p>
+              <p class="pl-5">name: <span class="text-paper">"Andrés"</span>,</p>
+              <p class="pl-5">curiosity: <span class="text-paper">"∞"</span>,</p>
+              <p class="pl-5">learning: [</p>
+              <p class="pl-10 text-paper">"HTML", "CSS", "JavaScript"</p>
+              <p class="pl-5">]</p>
+              <p>};</p>
+            </div>
+            <div class="absolute bottom-6 left-6 right-6 flex items-end justify-between border-t border-white/10 pt-5 sm:bottom-8 sm:left-8 sm:right-8">
+              <span class="max-w-[12rem] text-sm leading-6 text-paper">Cada línea de código es un nuevo comienzo.</span>
+              <span class="font-mono text-3xl text-acid" aria-hidden="true">✳</span>
+            </div>
+          </div>
+          <span class="absolute -right-4 -top-5 font-mono text-xs text-acid sm:-right-8">WEB · EN PROCESO</span>
+        </div>
+      </section>
+
+      <section id="sobre-mi" class="border-t border-white/10">
+        <div class="mx-auto grid max-w-7xl gap-10 px-6 py-24 sm:px-10 md:grid-cols-[0.7fr_1.3fr] lg:px-16 lg:py-32">
+          <div>
+            <p class="font-mono text-xs uppercase tracking-[0.2em] text-acid">01 / Sobre mí</p>
+            <h2 class="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">Aprender haciendo.</h2>
+          </div>
+          <div class="max-w-2xl">
+            <p class="text-xl leading-9 text-paper sm:text-2xl">
+              Estoy empezando mi camino en el desarrollo web. Ya conozco un poco de HTML y CSS, y ahora estoy aprendiendo JavaScript.
+            </p>
+            <p class="mt-6 leading-7 text-muted">
+              Todavía no tengo experiencia profesional ni proyectos para mostrar, pero sí muchas ganas de practicar, experimentar y crecer con cada nuevo reto. Este portafolio también es parte de ese proceso.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="habilidades" class="border-t border-white/10">
+        <div class="mx-auto max-w-7xl px-6 py-24 sm:px-10 lg:px-16 lg:py-32">
+          <div class="mb-12 flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+            <div>
+              <p class="font-mono text-xs uppercase tracking-[0.2em] text-acid">02 / Habilidades</p>
+              <h2 class="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">En mi caja de herramientas.</h2>
+            </div>
+            <p class="max-w-xs text-sm leading-6 text-muted">Las bases que estoy explorando, una línea de código a la vez.</p>
+          </div>
+          <div class="grid gap-3 sm:grid-cols-3">
+            <article class="group border border-white/10 bg-white/[0.02] p-6 transition hover:border-acid/60 sm:p-8">
+              <span class="font-mono text-xs text-muted">01 — ESTRUCTURA</span>
+              <h3 class="mt-10 text-3xl font-semibold">HTML</h3>
+              <p class="mt-3 text-sm leading-6 text-muted">Construyendo la estructura y el contenido de la web.</p>
+              <span class="mt-8 inline-block rounded-full border border-white/15 px-3 py-1 font-mono text-xs text-acid">Aprendiendo</span>
+            </article>
+            <article class="group border border-white/10 bg-white/[0.02] p-6 transition hover:border-acid/60 sm:p-8">
+              <span class="font-mono text-xs text-muted">02 — ESTILO</span>
+              <h3 class="mt-10 text-3xl font-semibold">CSS</h3>
+              <p class="mt-3 text-sm leading-6 text-muted">Dándole personalidad, color y forma a cada página.</p>
+              <span class="mt-8 inline-block rounded-full border border-white/15 px-3 py-1 font-mono text-xs text-acid">Aprendiendo</span>
+            </article>
+            <article class="group border border-white/10 bg-white/[0.02] p-6 transition hover:border-acid/60 sm:p-8">
+              <span class="font-mono text-xs text-muted">03 — INTERACCIÓN</span>
+              <h3 class="mt-10 text-3xl font-semibold">JavaScript</h3>
+              <p class="mt-3 text-sm leading-6 text-muted">Explorando cómo hacer que las ideas cobren vida.</p>
+              <span class="mt-8 inline-block rounded-full border border-white/15 px-3 py-1 font-mono text-xs text-acid">En proceso</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="educacion" class="border-t border-white/10">
+        <div class="mx-auto grid max-w-7xl gap-10 px-6 py-24 sm:px-10 md:grid-cols-[0.7fr_1.3fr] lg:px-16 lg:py-32">
+          <div>
+            <p class="font-mono text-xs uppercase tracking-[0.2em] text-acid">03 / Educación</p>
+            <h2 class="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">En movimiento.</h2>
+          </div>
+          <div class="border-l border-acid/50 pl-6 sm:pl-8">
+            <p class="font-mono text-xs uppercase tracking-[0.15em] text-acid">Actualmente</p>
+            <h3 class="mt-3 text-2xl font-medium">Formación en desarrollo web</h3>
+            <p class="mt-3 max-w-xl leading-7 text-muted">
+              Enfocado en fortalecer mis bases de HTML y CSS mientras avanzo con JavaScript. Cada concepto nuevo es una oportunidad para seguir creando.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="border-t border-white/10">
+        <div class="mx-auto max-w-7xl px-6 py-24 sm:px-10 lg:px-16 lg:py-32">
+          <p class="font-mono text-xs uppercase tracking-[0.2em] text-acid">04 / Contacto</p>
+          <div class="mt-8 grid gap-10 md:grid-cols-[1fr_auto] md:items-end">
+            <div>
+              <h2 class="max-w-3xl text-5xl font-semibold leading-[1.02] tracking-[-0.06em] sm:text-7xl">
+                ¿Creamos algo<br /><span class="text-acid">interesante?</span>
+              </h2>
+              <p class="mt-6 text-muted">Siempre estoy abierto a aprender y conectar.</p>
+            </div>
+            <a
+              href="mailto:andresriwi@gmail.com"
+              class="inline-flex w-fit items-center gap-3 border-b border-acid pb-3 text-lg transition hover:text-acid"
+            >
+              andresriwi@gmail.com <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10">
+      <div class="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-6 text-xs text-muted sm:flex-row sm:items-center sm:justify-between sm:px-10 lg:px-16">
+        <span>Diseñado y construido por Andrés Jaramillo.</span>
+        <a href="#inicio" class="w-fit transition hover:text-acid">Volver arriba ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
